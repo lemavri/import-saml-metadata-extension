@@ -1,0 +1,16 @@
+{
+  "title": "Import SAML Metadata Extension",
+  "name": "import-saml-metadata-extension",
+  "version": "1.0.0",
+  "author": "Mauricio Schneider",
+  "description": "Extension to create SAML connections based on a metadata.xml file",
+  "type": "application",
+  "repository": "https://github.com/auth0/import-saml-metadata-extension",
+  "keywords": [
+    "auth0",
+    "extension"
+  ],
+  "auth0": {
+    "scopes": "create:connections"
+  }
+}

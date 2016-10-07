@@ -1,0 +1,40 @@
+extends ./layout.jade
+
+block title
+  title My Extension
+
+block content
+  script(type='text/babel').
+    var Extension = React.createClass({
+      render: function() {
+        return (
+          <div>
+            <form className="form-horizontal col-xs-12">
+              <div className="form-group">
+                <label className="col-xs-2 control-label">Connection name</label>
+                <div className="col-xs-10">
+                  <input name="connectionName" type="text" placeholder="MySAMLConnection" className="form-control"/>
+                </div>
+              </div>
+              <div className="form-group">
+                <label className="col-xs-2 control-label">XML Content</label>
+                <div className="col-xs-10">
+                  <textarea name="connectionName" className="form-control" rows="20">
+                  </textarea>
+                </div>
+              </div>
+              <div className="form-group">
+                <div className="col-xs-12">
+                  <div className="btn btn-success">Success</div>
+                </div>
+              </div>
+            </form>
+          </div>
+        );
+      }
+    });
+
+    ReactDOM.render(
+      <Extension />,
+      document.getElementById('extension')
+    );
